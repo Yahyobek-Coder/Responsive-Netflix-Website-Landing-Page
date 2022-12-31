@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Website Responsive Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+                <img src="images/search.png">
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="images/bg.jpg" class="bg">
+        <div class="content">
+            <img src="images/name.png" class="movieTitle">
+            <h4>
+                <span>2020</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit consequatur pariatur mollitia vero at.
+            Delectus pariatur fuga porro voluptatibus voluptatum, esse perspiciatis ad eligendi sed exercitationem minima,
+            nostrum eaque quia dolor tempore quibusdam deserunt quos. Adipisci alias quam natus. Nostrum quis quidem voluptatum
+            est reiciendis lorem40 libero distinctio! Obcaecati, error laborum, fugiat aliquid molestiae delectus!</p>
+            <div class="buttons">
+                <a href="#"><img src="images/play_2.png"><h4> Play</h4></a>
+                <a href="#"><img src="images/plus.png" class="plus"><h4> My List</h4></a>
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo();"><img src="images/play.png">Watch Trailer</a>
+    </div>
+
+    <div class="trailer">
+        <video src="video/video.mp4" controls="true" autoplay="true"></video>
+        <img src="images/close.png" class="close" onclick="toggleVideo();">
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
